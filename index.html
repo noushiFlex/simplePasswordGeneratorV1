@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/style.css" rel="stylesheet">
+    <title>Password Generator</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</head>
+
+<body
+    class="h-dvh w-full overflow-hidden bg-[url('/assets/background/background.jpeg')] bg-cover flex items-center justify-center ">
+    <div
+        class="size-80 border-solid border-white border-2 bg-[#FFFAEC] relative text-black text-bold rounded-lg shadow-lg transition-all flex flex-col items-center justify-center">
+        <h1 class="text-5xl text-center w-full top-1 absolute bold shadow-lg">
+            PASSWORD GENERATOR
+        </h1>
+        <div class="flex w-full justify-center items-center relative  h-[55px]">
+            <h1 id="password_result" class="text-2xl">null</h1>
+            <button id="copyButton" class="absolute right-5 hover:scale-105 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="black"
+                        d="M15.24 2h-3.894c-1.764 0-3.162 0-4.255.148c-1.126.152-2.037.472-2.755 1.193c-.719.721-1.038 1.636-1.189 2.766C3 7.205 3 8.608 3 10.379v5.838c0 1.508.92 2.8 2.227 3.342c-.067-.91-.067-2.185-.067-3.247v-5.01c0-1.281 0-2.386.118-3.27c.127-.948.413-1.856 1.147-2.593s1.639-1.024 2.583-1.152c.88-.118 1.98-.118 3.257-.118h3.07c1.276 0 2.374 0 3.255.118A3.6 3.6 0 0 0 15.24 2" />
+                    <path fill="black"
+                        d="M6.6 11.397c0-2.726 0-4.089.844-4.936c.843-.847 2.2-.847 4.916-.847h2.88c2.715 0 4.073 0 4.917.847S21 8.671 21 11.397v4.82c0 2.726 0 4.089-.843 4.936c-.844.847-2.202.847-4.917.847h-2.88c-2.715 0-4.073 0-4.916-.847c-.844-.847-.844-2.21-.844-4.936z" />
+                </svg>
+            </button>
+        </div>
+        <div class="absolute top-52 flex ">
+            <div class="flex justify-center items-center ">
+                <input id="numberbox" type="checkbox">
+                <label class="ml-2">1-9</label>
+            </div>
+            <div class="flex justify-center items-center ">
+                <input id="charbox" class="ml-2" type="checkbox">
+                <label class="ml-2">*-$</label>
+            </div>
+            <div class="flex justify-center items-center ">
+                <input id="majbox" class="ml-2" type="checkbox">
+                <label class="ml-2">a-A</label>
+            </div>
+            <div class="flex justify-center items-center ">
+                <input id="rangebox" class="ml-2 w-16" type="number" min="1" value="8" max="100">
+                <label class="ml-2">Range</label>
+            </div>
+        </div>
+        <button id="buttonGen"
+            class="absolute top-64 bg-black p-3 text-2xl bold text-[#FFFAEC] rounded-lg transition-all hover:bg-[#FFFAEC] hover:text-black hover:shadow-inner">Generate</button>
+    </div>
+</body>
+<script src="/script.js"></script>
+
+</html>
