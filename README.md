@@ -35,6 +35,6 @@ Voici un exemple de mot de passe généré :
 Clonez le repository et ouvrez le fichier `index.html` dans votre navigateur pour utiliser l'application.
 
 ```bash
-git clone https://github.com/votre-utilisateur/password-generator.git
+git clone https://github.com/noushiFlex/simplePasswordGeneratorV1.git
 cd password-generator
 open index.html
