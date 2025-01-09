@@ -1,0 +1,11 @@
+{
+    "name": "Password Generator Extension",
+    "version": "1.0.0",
+    "description": "Password Generator Extension",
+    "manifest_version": 3,
+    "author": "Vessime Yohann",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Password Generator"
+    }
+}

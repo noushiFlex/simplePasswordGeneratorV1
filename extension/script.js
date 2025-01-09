@@ -32,12 +32,7 @@ function generation(e) {
 
     // Générer le mot de passe
     for (let i = 0; i < length; i++) {
-        let chr = final_char.charAt(Math.floor(Math.random() * final_char.length))
-        if (chr == ''){
-            null
-        }else{
-            result += chr
-        }
+        result += final_char.charAt(Math.floor(Math.random() * final_char.length));
     }
 
     // Afficher le mot de passe
